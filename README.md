@@ -62,31 +62,26 @@ The dataset contains transactional sales data with the following features:
 - By Payment Method and City
 
 ### 4. Peak Sales Hours
-- Line plots for hourly trends
+- Horizontal Grouped Bar Chart for analysing at what time fo day Sales was peak for which Category
 
 ### 5. Profit Margin Analysis
 - By Branch & Category using Faceted Bar Charts
 
 ---
 
-## 📈 Visual Examples
-
-*(Screenshots or saved PNG plots can be added here)*
-
----
 
 ## 🧹 Data Cleaning Highlights
 
 - Removed rows with missing `Unit_Price` or `Quantity`
-- Converted `Unit_Price` from string to float
-- Transformed `Time` from timedelta to HH:MM:SS format
+- Converted `Unit_Price` from string to float (removed $ signs)
+- Transformed `Time` from timedelta to HH:MM:SS format (for putting it in Mysql need to be in TIME Data type format)
 - Parsed and validated date-time fields
 - Ensured consistency in categorical values
 
 ---
 
 ## 📂 Project Structure
-├── EADME.md
+├── README.md
 ├── Walmart.csv
 ├── project.ipynb
 └── walmart_cleaned.csv
